@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Create space between navbar and image */
+    position: relative; /* Enable positioning context for the image */
+    font-family: sans-serif;
+  }
+  
+  .header-image1 {
+    position: absolute;
+    float: right;
+    top: 20%;
+    right: 20%;
+
+  }
+  .header-content{
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+  .header-image2{
+    position:absolute;
+    top: 600px;
+    left: 40px;
+  }
+  .header-container{
+    position: absolute;
+    top: 85%;
+    right: 20%;
+  }
+  
+  /* Adjust the placement for smaller viewports */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack navbar and image in small viewports */
+      align-items: flex-end; /* Align items to the right */
+    }
+  
+    .header-image1 {
+      position: static; /* Remove absolute positioning in small viewports */
+      /* Adjust top margin as needed */
+    }
+    .header-image2{
+        position: static;
+    }
+    .header-container{
+        position: static;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  

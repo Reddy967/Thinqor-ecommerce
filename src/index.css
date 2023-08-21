@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: whitesmoke;
+  height: 70px;
+  
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Adjust the width as per your logo image */
+  height: 60px; /* Adjust the height as per your logo image */
+  margin-right: 400px; /* Add some spacing between logo and logo text */
+  margin-top: -5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-links a:hover {
+  background-color: lightgrey;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  navbar {
+    justify-content: flex-start; /* Align items to the left on smaller screens */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack the links vertically on smaller screens */
+  }
+  
+}
+
+ 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+

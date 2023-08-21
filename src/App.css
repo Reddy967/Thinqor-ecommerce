@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+  h1 {
+    font-size: 24px; /* Decrease font size for smaller screens */
+  }
+  p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
+}

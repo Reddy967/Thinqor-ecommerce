@@ -1,0 +1,49 @@
+/* ProductBookingCard.css */
+.product-booking-card {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width:fit-content;
+  }
+  
+  .product-booking-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+  }
+  
+  .book-button {
+    background-color: skyblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .book-button1{
+    background-color: white;
+    color: orange;
+    padding: 10px 20px;
+    border-color: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 30px;
+  }
+  @media (min-width: 768px) {
+    .product-booking-card {
+      margin-left: auto;
+    }
+  }
+  
